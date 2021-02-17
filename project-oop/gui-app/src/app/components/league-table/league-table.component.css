@@ -1,0 +1,88 @@
+#buttons_div {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.button_span {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table_div {
+  width: 75%;
+  margin:20px auto;
+}
+
+.btn {
+  border-color: #e90052;
+}
+
+.btn:focus {
+  border-color: mediumpurple;
+  color: mediumpurple;
+}
+
+
+.mat-column-noOfMatches{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-wins{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-draws{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-defeats{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-goalsScored{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-goalsAgainst{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-goalDifference{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-points{
+  flex: 0 0 8% !important;
+  width: 25% !important;
+}
+
+.mat-column-position{
+  flex: 0 0 10% !important;
+  width: 25% !important;
+}
+
+.column_head {
+  color: mediumpurple;
+  font-size: 15px;
+}
+
+.cell {
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid transparent;
+}
+
+.mat_table {
+  background-color: transparent;
+}
+
+
+

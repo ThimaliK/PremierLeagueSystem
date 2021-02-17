@@ -1,0 +1,45 @@
+<div id="main_div">
+  <label>
+    <input matInput #day maxlength="2" size="2" class="date_input">
+  </label>
+  <label>
+    <input matInput #month maxlength="2" size="2" class="date_input">
+  </label>
+  <label>
+    <input matInput #year maxlength="4" size="8" class="date_input">
+  </label>
+
+  <span>
+    <button mat-stroked-button color="accent" (click)="sendDate(year.value, month.value, day.value)" class="btn"> Find Matches </button>
+  </span>
+
+  <span style="margin-left: 5px" *ngIf="displayMessage1==true">{{message1}}</span>
+</div>
+
+<div class="table_div" >
+  <mat-table [dataSource]="dataSource" *ngIf="displayTable==true" class="mat_table">
+
+    <ng-container matColumnDef="sportsClub1">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Club 1 </mat-header-cell>
+      <mat-cell *matCellDef="let match" class="cell"> {{match.sportsClub1.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="score1">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Score 1 </mat-header-cell>
+      <mat-cell *matCellDef="let match" class="cell"> {{match.score1}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="score2">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Score 2 </mat-header-cell>
+      <mat-cell *matCellDef="let match" class="cell"> {{match.score2}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="sportsClub2">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Club 2 </mat-header-cell>
+      <mat-cell *matCellDef="let match" class="cell"> {{match.sportsClub2.name}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

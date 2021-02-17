@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title></title></head>
+<body class="mat-body-strong">
+
+<mat-toolbar color="primary" class="navbar">
+
+  <img class="img-fluid" src="./assets/images/logotitle.png" alt="logo">
+
+  <div id="menu">
+    <a mat-stroked-button routerLink="/home" routerLinkActive="active" class="style" id="home">Home</a>
+    <a mat-stroked-button routerLink="/pltable" routerLinkActive="active" class="style">PL Table</a>
+    <a mat-stroked-button routerLink="/generatematch" routerLinkActive="active" class="style">Generate Match</a>
+    <a mat-stroked-button routerLink="/matchtable" routerLinkActive="active" class="style">All Matches</a>
+    <a mat-stroked-button routerLink="/findmatches" routerLinkActive="active" class="style" id="find_matches">Find Matches</a>
+  </div>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+</body>
+</html>
+
+
+
+

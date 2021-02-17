@@ -1,0 +1,35 @@
+.match_main_div {
+  width:60%;
+  margin:50px auto;
+}
+
+.mat-column-datePlayed{
+  flex: 0 0 12% !important;
+  width: 25% !important;
+}
+
+.mat-column-score1{
+  flex: 0 0 10% !important;
+  width: 25% !important;
+}
+
+.mat-column-score2{
+  flex: 0 0 10% !important;
+  width: 25% !important;
+}
+
+.column_head {
+  color: mediumpurple;
+  font-size: 15px;
+}
+
+.cell {
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid transparent;
+}
+
+.mat_table {
+  background-color: transparent;
+}

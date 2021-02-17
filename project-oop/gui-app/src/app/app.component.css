@@ -1,0 +1,44 @@
+.navbar{
+  justify-content: space-between;
+}
+
+body {
+  background-image: url("../assets/images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 200%;
+}
+
+.style  {
+  color: white;
+  border-color: #e90052;
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+  border-radius: unset;
+  min-width: 150px;
+  letter-spacing: 2px;
+  font-family: sans-serif
+}
+
+#home {
+  border-left-style: hidden;
+}
+
+#find_matches {
+  border-right-style: hidden;
+}
+
+.style:focus {
+  color: #e90052;
+}
+
+.navbar {
+  background-color: #3d195b;
+}
+
+.img-fluid {
+  width: 13% !important;
+  margin-bottom: 7px;
+}
+
+

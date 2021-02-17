@@ -1,0 +1,61 @@
+#main_div {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.table_div {
+  width: 40%;
+  margin:20px auto;
+}
+
+.date_input {
+  color: white;
+  margin-left: 5px;
+  border-color: #e90052;
+  background: transparent;
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.btn {
+  margin-left: 5px;
+  border-color: #e90052;
+}
+
+.btn:focus {
+  border-color: mediumpurple;
+  color: mediumpurple;
+}
+
+.mat-column-score1{
+  flex: 0 0 15% !important;
+  width: 25% !important;
+}
+
+.mat-column-score2{
+  flex: 0 0 15% !important;
+  width: 25% !important;
+}
+
+span {
+  color: mediumpurple;
+}
+
+.column_head {
+  color: mediumpurple;
+  font-size: 15px;
+}
+
+.cell {
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid transparent;
+}
+
+.mat_table {
+  background-color: transparent;
+}
+
+

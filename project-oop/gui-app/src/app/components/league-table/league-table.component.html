@@ -1,0 +1,72 @@
+<div id="buttons_div">
+  <span class="button_span">
+    <button class="btn" mat-stroked-button color="accent" (click)="sortClubsByPoints()"> Sort By Points </button>
+  </span>
+  <span class="button_span">
+    <button class="btn" mat-stroked-button color="accent" (click)="sortClubsByWins()"> Sort By Wins </button>
+  </span>
+  <span class="button_span">
+    <button class="btn" mat-stroked-button color="accent" (click)="sortClubsByGF()"> Sort By GF </button>
+  </span>
+</div>
+
+<div class="table_div">
+  <mat-table [dataSource]="dataSource" class="mat_table">
+
+    <ng-container matColumnDef="position">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Position </mat-header-cell>
+      <mat-cell *matCellDef="let element; let i = index;" class="cell"> {{i+1}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Club </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="noOfMatches">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Played </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.noOfMatches}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="wins">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Won </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.wins}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="draws">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Drawn </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.draws}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="defeats">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Lost </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.defeats}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="goalsScored">
+      <mat-header-cell *matHeaderCellDef class="column_head"> GF </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.goalsScored}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="goalsAgainst">
+      <mat-header-cell *matHeaderCellDef class="column_head"> GA </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.goalsAgainst}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="goalDifference">
+      <mat-header-cell *matHeaderCellDef class="column_head"> GD </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.goalDifference}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="points">
+      <mat-header-cell *matHeaderCellDef class="column_head"> Points </mat-header-cell>
+      <mat-cell *matCellDef="let club" class="cell"> {{club.points}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns; let i = position;"></mat-row>
+
+  </mat-table>
+</div>
+
+
