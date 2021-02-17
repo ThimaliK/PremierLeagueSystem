@@ -1,4 +1,5 @@
 1. Running the Console Application
+
 Compile all necessary classes by going to the cli folder and running the followig command
 
 	javac -d . *.java
