@@ -1,3 +1,7 @@
+Premier League Football System
+- java Backend with play framework and Angular Frontend
+
+
 1. Running the Console Application
 
 Compile all necessary classes by going to the cli folder and running the followig command
