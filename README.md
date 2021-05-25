@@ -1,8 +1,10 @@
-Premier League Football System
-- java Backend with play framework and Angular Frontend
+### Premier League Football System
 
+- A system to manage and view football clubs and matches within a League
+- Java Backend with Play framework and Angular Frontend
+- Follows object orientation and MVC design pattern
 
-1. Running the Console Application
+## Running the Console Application
 
 Compile all necessary classes by going to the cli folder and running the followig command
 
@@ -14,7 +16,7 @@ Next run the Console Application by using the following command
 
 
 
-2. Running the GUI
+### Running the GUI Application
 
 First move to the gui-app folder and run the following command to install all dependencies
 
