@@ -1,10 +1,10 @@
-### Premier League Football System
+## Premier League Football System
 
 - A system to manage and view football clubs and matches within a League
 - Java Backend with Play framework and Angular Frontend
 - Follows object orientation and MVC design pattern
 
-## Running the Console Application
+### Running the Console Application
 
 Compile all necessary classes by going to the cli folder and running the followig command
 
